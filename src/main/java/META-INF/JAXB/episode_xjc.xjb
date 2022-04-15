@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.04.13 a las 07:20:04 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://t4is.uv.mx/saludos">
+    <schemaBindings map="false">
+      <package name="https.t4is_uv_mx.saludos"/>
+    </schemaBindings>
+    <bindings scd="tns:BuscarSaludosResponse">
+      <class ref="https.t4is_uv_mx.saludos.BuscarSaludosResponse"/>
+    </bindings>
+    <bindings scd="tns:SaludarRequest">
+      <class ref="https.t4is_uv_mx.saludos.SaludarRequest"/>
+    </bindings>
+    <bindings scd="tns:SaludarResponse">
+      <class ref="https.t4is_uv_mx.saludos.SaludarResponse"/>
+    </bindings>
+    <bindings scd="tns:ModificarSaludoRequest">
+      <class ref="https.t4is_uv_mx.saludos.ModificarSaludoRequest"/>
+    </bindings>
+    <bindings scd="tns:ModificarSaludoResponse">
+      <class ref="https.t4is_uv_mx.saludos.ModificarSaludoResponse"/>
+    </bindings>
+    <bindings scd="tns:EliminarSaludoRequest">
+      <class ref="https.t4is_uv_mx.saludos.EliminarSaludoRequest"/>
+    </bindings>
+    <bindings scd="tns:EliminarSaludoResponse">
+      <class ref="https.t4is_uv_mx.saludos.EliminarSaludoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
