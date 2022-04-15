@@ -28,7 +28,7 @@ public class ToDoListEndPoint {
         Tareas tarea = new Tareas();
         tarea.setNombre(peticion.getNombre());
         tarea.setDescripcion(peticion.getDescripcion());
-        tarea.setDescripcion(peticion.getImportancia());
+        tarea.setImportancia(peticion.getImportancia());
         tarea.setStatus(peticion.getStatus());
         itareas.save(tarea);
         return respuesta;
@@ -45,7 +45,8 @@ public class ToDoListEndPoint {
             MostrarTareasResponse.Tareas e = new MostrarTareasResponse.Tareas();
             e.setNombre(tarea.getNombre());
             e.setId(tarea.getId());
-            e.setId(tarea.getStatus());
+            e.setStatus(tarea.getStatus());
+            e.setImportancia(tarea.getImportancia());
             respuesta.getTareas().add(e);
         }
         return respuesta;
@@ -60,7 +61,7 @@ public class ToDoListEndPoint {
         tarea.setId(peticion.getId());
         tarea.setNombre(peticion.getNombre());
         tarea.setDescripcion(peticion.getDescripcion());
-        tarea.setDescripcion(peticion.setImportancia());
+        tarea.setImportancia(peticion.getImportancia());
         tarea.setStatus(peticion.getStatus());
         itareas.save(tarea);
         respuesta.setRespuesta("Tarea modificada");

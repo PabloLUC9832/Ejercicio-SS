@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.04.15 a las 12:53:31 PM CDT 
+// Generado el: 2022.04.15 a las 01:12:21 PM CDT 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="importancia" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -40,6 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "nombre",
     "descripcion",
+    "importancia",
     "status"
 })
 @XmlRootElement(name = "AgregarTareaRequest")
@@ -49,6 +51,8 @@ public class AgregarTareaRequest {
     protected String nombre;
     @XmlElement(required = true)
     protected String descripcion;
+    @XmlElement(required = true)
+    protected String importancia;
     @XmlElement(required = true)
     protected String status;
 
@@ -98,6 +102,30 @@ public class AgregarTareaRequest {
      */
     public void setDescripcion(String value) {
         this.descripcion = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad importancia.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getImportancia() {
+        return importancia;
+    }
+
+    /**
+     * Define el valor de la propiedad importancia.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setImportancia(String value) {
+        this.importancia = value;
     }
 
     /**
