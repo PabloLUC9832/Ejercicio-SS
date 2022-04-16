@@ -4,7 +4,10 @@
  
  Enlace del repositorio Docker: [ejercicioss](https://hub.docker.com/repository/docker/pablolucas/ejercicioss "ejercicioss")
 
+### Instrucciones
+
  > docker pull pablolucas/ejercicioss
 
  > docker run -it --rm -p 8080:8080 pablolucas/ejercicioss
 
+ > /ws/tareas.wsdl
